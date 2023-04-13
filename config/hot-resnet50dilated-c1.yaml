@@ -1,0 +1,43 @@
+DATASET:
+  root_dataset: "/path/to/data/Contact_Data"
+  list_train: "./data/hot_train.odgt"
+  list_val: "./data/hot_val.odgt"
+  list_test: "./data/demo.odgt"
+  num_class: 18
+  imgSizes: (300, 375, 450, 525, 600)
+  imgMaxSize: 400
+  padding_constant: 8
+  segm_downsampling_rate: 8
+  random_flip: True
+
+MODEL:
+  arch_encoder: "resnet50dilated"
+  arch_decoder: "c1"
+  fc_dim: 2048
+  with_part: True
+
+TRAIN:
+  batch_size_per_gpu: 24
+  num_epoch: 10
+  start_epoch: 0
+  epoch_iters: 100
+  optim: "SGD"
+  lr_encoder: 0.02
+  lr_decoder: 0.02
+  lr_pow: 0.9
+  beta1: 0.9
+  weight_decay: 1e-4
+  deep_sup_scale: 0.4
+  fix_bn: False
+  workers: 16
+  disp_iter: 20
+  seed: 304
+
+VAL:
+  checkpoint: "epoch_10.pth"
+
+TEST:
+  checkpoint: "epoch_14.pth"
+  visualize: True
+
+DIR: "ckpt/hot-c1"
