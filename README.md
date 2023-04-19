@@ -30,6 +30,10 @@
     </a>
 </p>
 
+## News
+
+- [2023/04/19] HOT dataset and model checkpoints are release at the [project website](https://hot.is.tue.mpg.de)!
+
 ## Environment
 The code is developed under the following configurations.
 - Hardware: >=4 GPUs for training, >=1 GPU for testing (set ```[--gpus GPUS]``` accordingly).
