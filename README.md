@@ -32,6 +32,7 @@
 
 ## News
 
+- [2023/09/11] Instance-level contact annotations are released for HOT. Check out the [DATA.md](data/DATA.md) page for more details. 
 - [2023/04/19] HOT dataset and model checkpoints are released at the [project website](https://hot.is.tue.mpg.de)!
 
 ## Environment
@@ -52,7 +53,7 @@ pip3 install torch==1.11.0+cu113 torchvision==0.12.0+cu113 -f https://download.p
 - Data: download the HOT dataset from the [project website](https://hot.is.tue.mpg.de) and unzip to `/path/to/dataset`. Set `DATASET.root_dataset` as `/path/to/dataset` in the config files in `./config/*.yaml`.
 - The split files are located inside `./data` for the `HOT-Annotated ('hot')`, `HOT-Generated ('prox')`, and `Full-Set ('all')`. See [DATA.md](data/DATA.md) for more details.
 - The training, validation and testing splits to use during experiments are indicated in the config file `DATASET.list_train(val/test)`.
-
+- The instance-level contact annotations are released. They are more flexible to use, with processing code snippet attached. See [DATA.md](data/DATA.md).
 
 ## Training
 ```
