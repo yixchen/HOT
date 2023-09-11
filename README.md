@@ -15,7 +15,7 @@
     <img src="./assets/teaser.jpg" alt="Logo" width="100%">
   </div>
 
-  <p align="left">
+  <p align="center">
     <a href='https://arxiv.org/abs/2303.03373'>
       <img src='https://img.shields.io/badge/Paper-arXiv-green?style=plastic&logo=arXiv&logoColor=green' alt='Paper arXiv'>
     </a>
